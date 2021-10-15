@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="area_spinner_values">
+        <item>American</item>
+        <item>British</item>
+        <item>Canadian</item>
+        <item>Chinese</item>
+        <item>Dutch</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="category_spinner_values">
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+    </string-array>
+</resources>

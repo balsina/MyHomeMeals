@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recipes.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Filter" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Search recepies using the following filters" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_text_search_recipe"
+                    android:layout_width="200dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="24dp"
+                    android:hint="Search by recipe name"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="130dp"
+                    android:layout_height="42dp"
+                    android:backgroundTint="@color/naranja"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="24dp"
+                    android:text="Search"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_text_search_by_ingredient"
+                    android:layout_width="200dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="24dp"
+                    android:hint="Search by ingredient"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_search_by_ingredient"
+                    android:layout_width="130dp"
+                    android:layout_height="42dp"
+                    android:backgroundTint="@color/naranja"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="24dp"
+                    android:text="Search"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_area"
+                    android:layout_width="200dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_search_by_area"
+                    android:layout_width="130dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="24dp"
+                    android:backgroundTint="@color/naranja"
+                    android:textColor="@color/black"
+                    android:text="Search"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_category_vegan"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:backgroundTint="@color/naranja"
+                    android:textColor="@color/black"
+                    android:text="Vegan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_category_vegetarian"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:backgroundTint="@color/naranja"
+                    android:textColor="@color/black"
+                    android:text="Vegetarian" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
